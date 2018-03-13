@@ -1,0 +1,165 @@
+// sass --watch css
+// sass --watch css --style compressed
+
+@import "modules/_functions.sass"
+@import "modules/_mixins.sass"
+@import "modules/_colors.sass"
+
+//////////////////////////////////////////////
+// Global Vars
+//////////////////////////////////////////////
+
+// Typography
+$fs-base: 16px
+$line-height: 1.6
+$blh: round($fs-base * $line-height)
+
+$font-text: "'Open Sans', sans-serif"
+$font-title: "'Raleway', sans-serif"
+$title-trans: "none"
+$title-weight: 300
+
+// Font Scale Factor
+// 1.067: Minor Second
+// 1.125: Major Second
+// 1.200: Minor Third
+// 1.250: Major Third
+// 1.333: Perfect Fourth
+// 1.414: Augmented Fourth
+// 1.500: Perfect Fifth
+// 1.618: Golden Ratio
+
+$scale-factor: 1.333
+$xs-scale-factor: 1.125
+
+// media breakpoints (min)
+$media-min-xs: "screen and (min-width: 576px)"
+$media-min-sm: "screen and (min-width: 768px)"
+$media-min-md: "screen and (min-width: 992px)"
+$media-min-lg: "screen and (min-width: 1200px)"
+$media-min-xl: "screen and (min-width: 1400px)"
+
+// media breakpoints (max)
+$media-max-xs: "screen and (max-width: 575px)"
+$media-max-sm: "screen and (max-width: 767px)"
+$media-max-md: "screen and (max-width: 991px)"
+$media-max-lg: "screen and (max-width: 1199px)"
+$media-max-xl: "screen and (max-width: 1399px)"
+
+@import "modules/_reset.sass"
+
+
+$test: "grid"
+// $test: "no-grid"
+
+
+//////////////////////////////////////////////
+// Component: Basics
+//////////////////////////////////////////////
+
+.app
+  padding: $blh
+
+.section
+  display: block
+  margin-bottom: $blh
+
+.panel
+  display: block
+
+.container
+  display: block
+
+.card
+  display: block
+  padding: $blh/2
+  border: solid 1px #ddd
+  height: 100%
+  text-align: center
+  background: #fafafa
+  .card &
+    background: #fff
+  @media #{$media-min-xs}
+    border: solid 1px blue
+  @media #{$media-min-sm}
+    border: solid 1px green
+  @media #{$media-min-md}
+    border: solid 1px orange
+  @media #{$media-min-lg}
+    border: solid 1px purple
+  @media #{$media-min-xl}
+    border: solid 1px red
+
+//////////////////////////////////////////////
+// Component: Scaffold
+//////////////////////////////////////////////
+
+$max: 12
+
+// Break Points
+$bpts_labels: 'xs' 'sm' 'md' 'lg' 'xl'
+$bpts_values: 576px 768px 992px 1200px 1400px
+
+.grid
+  @media #{$media-min-xs}
+    font-size: 0
+  @supports (display: #{$test})
+    font-size: $fs-base
+    @media #{$media-min-xs}
+      &--gutter
+        grid-gap: $blh/2
+      @for $i from 1 through $max
+        &--#{$i}
+          display: grid
+          grid-template-columns: repeat($i, 1fr)
+  &__col
+    display: block
+    @each $label in $bpts_labels
+      $val: nth($bpts_values, index($bpts_labels, $label))
+      @media screen and (min-width: #{$val})
+        display: inline-block
+        font-size: $fs-base
+        @for $i from 1 through $max
+          &[class*="-#{$label}#{$i}"]
+            @for $j from 1 through $max
+              .grid--#{$j} &
+                @if ($i/$j * 100%) <= 100
+                  width: $i/$j * 100%
+                @else
+                  width: 100%
+    @supports (display: #{$test})
+      display: block
+      font-size: inherit
+      width: auto
+      @each $label in $bpts_labels
+        $val: nth($bpts_values, index($bpts_labels, $label))
+        @media screen and (min-width: #{$val})
+          @for $i from 1 through $max
+            &[class*="-#{$label}#{$i}"]
+              @for $j from 1 through $max
+                .grid--#{$j} &
+                  width: auto
+                  @if $i <= $j
+                    grid-column: span $i
+                  @else
+                    grid-column: span $j
+
+
+//////////////////////////////////////////////
+// Component: Component
+//////////////////////////////////////////////
+
+.ind
+  &--grid
+    display: none
+  &--nogrid
+    display: block
+  @supports (display: #{$test})
+    &--grid
+      display: block
+    &--nogrid
+      display: none
+
+//////////////////////////////////////////////
+// Component: Component
+//////////////////////////////////////////////

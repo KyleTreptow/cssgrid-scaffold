@@ -1,0 +1,3833 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  font-style: inherit;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 26px;
+  color: #1e215b; }
+  h1 small, h2 small, h3 small, h4 small, h5 small {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-top: 6.5px; }
+
+@media screen and (min-width: 768px) {
+  h1,
+  .fs-h1 {
+    font-size: 37.897488592px;
+    line-height: 52px; } }
+@media screen and (max-width: 767px) {
+  h1,
+  .fs-h1 {
+    font-size: 22.78125px; } }
+
+@media screen and (min-width: 768px) {
+  h2,
+  .fs-h2 {
+    font-size: 28.430224px;
+    line-height: 39px; } }
+@media screen and (max-width: 767px) {
+  h2,
+  .fs-h2 {
+    font-size: 20.25px; } }
+
+@media screen and (min-width: 768px) {
+  h3,
+  .fs-h3 {
+    font-size: 21.328px;
+    line-height: 39px; } }
+@media screen and (max-width: 767px) {
+  h3,
+  .fs-h3 {
+    font-size: 18px; } }
+
+h4,
+.fs-h4,
+.fs-base {
+  font-size: 16px; }
+
+@media screen and (min-width: 768px) {
+  h5,
+  small,
+  button,
+  .fs-h5,
+  .fs-small {
+    font-size: 12.0030007502px; } }
+@media screen and (max-width: 767px) {
+  h5,
+  small,
+  button,
+  .fs-h5,
+  .fs-small {
+    font-size: 14.2222222222px; } }
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0;
+  margin-bottom: 26px; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+b, strong, em, small, code {
+  line-height: inherit; }
+
+a {
+  color: #e36ddd; }
+
+figure {
+  margin: 0; }
+  figure img {
+    max-width: 100%; }
+
+.app {
+  padding: 26px; }
+
+.section {
+  display: block;
+  margin-bottom: 26px; }
+
+.panel {
+  display: block; }
+
+.container {
+  display: block; }
+
+.card {
+  display: block;
+  padding: 13px;
+  border: solid 1px #ddd;
+  height: 100%;
+  text-align: center;
+  background: #fafafa; }
+  .card .card {
+    background: #fff; }
+  @media screen and (min-width: 576px) {
+    .card {
+      border: solid 1px blue; } }
+  @media screen and (min-width: 768px) {
+    .card {
+      border: solid 1px green; } }
+  @media screen and (min-width: 992px) {
+    .card {
+      border: solid 1px orange; } }
+  @media screen and (min-width: 1200px) {
+    .card {
+      border: solid 1px purple; } }
+  @media screen and (min-width: 1400px) {
+    .card {
+      border: solid 1px red; } }
+
+@media screen and (min-width: 576px) {
+  .grid {
+    font-size: 0; } }
+@supports (display: grid) {
+  .grid {
+    font-size: 16px; }
+    @media screen and (min-width: 576px) {
+      .grid--gutter {
+        grid-gap: 13px; }
+      .grid--1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); }
+      .grid--2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+      .grid--3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); }
+      .grid--4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); }
+      .grid--5 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); }
+      .grid--6 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); }
+      .grid--7 {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); }
+      .grid--8 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); }
+      .grid--9 {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr); }
+      .grid--10 {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); }
+      .grid--11 {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr); }
+      .grid--12 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); } } }
+.grid__col {
+  display: block; }
+  @media screen and (min-width: 576px) {
+    .grid__col {
+      display: inline-block;
+      font-size: 16px; }
+      .grid--1 .grid__col[class*="-xs1"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs1"] {
+        width: 50%; }
+      .grid--3 .grid__col[class*="-xs1"] {
+        width: 33.3333333333%; }
+      .grid--4 .grid__col[class*="-xs1"] {
+        width: 25%; }
+      .grid--5 .grid__col[class*="-xs1"] {
+        width: 20%; }
+      .grid--6 .grid__col[class*="-xs1"] {
+        width: 16.6666666667%; }
+      .grid--7 .grid__col[class*="-xs1"] {
+        width: 14.2857142857%; }
+      .grid--8 .grid__col[class*="-xs1"] {
+        width: 12.5%; }
+      .grid--9 .grid__col[class*="-xs1"] {
+        width: 11.1111111111%; }
+      .grid--10 .grid__col[class*="-xs1"] {
+        width: 10%; }
+      .grid--11 .grid__col[class*="-xs1"] {
+        width: 9.0909090909%; }
+      .grid--12 .grid__col[class*="-xs1"] {
+        width: 8.3333333333%; }
+      .grid--1 .grid__col[class*="-xs2"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs2"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs2"] {
+        width: 66.6666666667%; }
+      .grid--4 .grid__col[class*="-xs2"] {
+        width: 50%; }
+      .grid--5 .grid__col[class*="-xs2"] {
+        width: 40%; }
+      .grid--6 .grid__col[class*="-xs2"] {
+        width: 33.3333333333%; }
+      .grid--7 .grid__col[class*="-xs2"] {
+        width: 28.5714285714%; }
+      .grid--8 .grid__col[class*="-xs2"] {
+        width: 25%; }
+      .grid--9 .grid__col[class*="-xs2"] {
+        width: 22.2222222222%; }
+      .grid--10 .grid__col[class*="-xs2"] {
+        width: 20%; }
+      .grid--11 .grid__col[class*="-xs2"] {
+        width: 18.1818181818%; }
+      .grid--12 .grid__col[class*="-xs2"] {
+        width: 16.6666666667%; }
+      .grid--1 .grid__col[class*="-xs3"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs3"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs3"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs3"] {
+        width: 75%; }
+      .grid--5 .grid__col[class*="-xs3"] {
+        width: 60%; }
+      .grid--6 .grid__col[class*="-xs3"] {
+        width: 50%; }
+      .grid--7 .grid__col[class*="-xs3"] {
+        width: 42.8571428571%; }
+      .grid--8 .grid__col[class*="-xs3"] {
+        width: 37.5%; }
+      .grid--9 .grid__col[class*="-xs3"] {
+        width: 33.3333333333%; }
+      .grid--10 .grid__col[class*="-xs3"] {
+        width: 30%; }
+      .grid--11 .grid__col[class*="-xs3"] {
+        width: 27.2727272727%; }
+      .grid--12 .grid__col[class*="-xs3"] {
+        width: 25%; }
+      .grid--1 .grid__col[class*="-xs4"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs4"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs4"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs4"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs4"] {
+        width: 80%; }
+      .grid--6 .grid__col[class*="-xs4"] {
+        width: 66.6666666667%; }
+      .grid--7 .grid__col[class*="-xs4"] {
+        width: 57.1428571429%; }
+      .grid--8 .grid__col[class*="-xs4"] {
+        width: 50%; }
+      .grid--9 .grid__col[class*="-xs4"] {
+        width: 44.4444444444%; }
+      .grid--10 .grid__col[class*="-xs4"] {
+        width: 40%; }
+      .grid--11 .grid__col[class*="-xs4"] {
+        width: 36.3636363636%; }
+      .grid--12 .grid__col[class*="-xs4"] {
+        width: 33.3333333333%; }
+      .grid--1 .grid__col[class*="-xs5"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs5"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs5"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs5"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs5"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs5"] {
+        width: 83.3333333333%; }
+      .grid--7 .grid__col[class*="-xs5"] {
+        width: 71.4285714286%; }
+      .grid--8 .grid__col[class*="-xs5"] {
+        width: 62.5%; }
+      .grid--9 .grid__col[class*="-xs5"] {
+        width: 55.5555555556%; }
+      .grid--10 .grid__col[class*="-xs5"] {
+        width: 50%; }
+      .grid--11 .grid__col[class*="-xs5"] {
+        width: 45.4545454545%; }
+      .grid--12 .grid__col[class*="-xs5"] {
+        width: 41.6666666667%; }
+      .grid--1 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs6"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs6"] {
+        width: 85.7142857143%; }
+      .grid--8 .grid__col[class*="-xs6"] {
+        width: 75%; }
+      .grid--9 .grid__col[class*="-xs6"] {
+        width: 66.6666666667%; }
+      .grid--10 .grid__col[class*="-xs6"] {
+        width: 60%; }
+      .grid--11 .grid__col[class*="-xs6"] {
+        width: 54.5454545455%; }
+      .grid--12 .grid__col[class*="-xs6"] {
+        width: 50%; }
+      .grid--1 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs7"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs7"] {
+        width: 87.5%; }
+      .grid--9 .grid__col[class*="-xs7"] {
+        width: 77.7777777778%; }
+      .grid--10 .grid__col[class*="-xs7"] {
+        width: 70%; }
+      .grid--11 .grid__col[class*="-xs7"] {
+        width: 63.6363636364%; }
+      .grid--12 .grid__col[class*="-xs7"] {
+        width: 58.3333333333%; }
+      .grid--1 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs8"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xs8"] {
+        width: 88.8888888889%; }
+      .grid--10 .grid__col[class*="-xs8"] {
+        width: 80%; }
+      .grid--11 .grid__col[class*="-xs8"] {
+        width: 72.7272727273%; }
+      .grid--12 .grid__col[class*="-xs8"] {
+        width: 66.6666666667%; }
+      .grid--1 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xs9"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xs9"] {
+        width: 90%; }
+      .grid--11 .grid__col[class*="-xs9"] {
+        width: 81.8181818182%; }
+      .grid--12 .grid__col[class*="-xs9"] {
+        width: 75%; }
+      .grid--1 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xs10"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xs10"] {
+        width: 90.9090909091%; }
+      .grid--12 .grid__col[class*="-xs10"] {
+        width: 83.3333333333%; }
+      .grid--1 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xs11"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-xs11"] {
+        width: 91.6666666667%; }
+      .grid--1 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xs12"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-xs12"] {
+        width: 100%; } }
+  @media screen and (min-width: 768px) {
+    .grid__col {
+      display: inline-block;
+      font-size: 16px; }
+      .grid--1 .grid__col[class*="-sm1"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm1"] {
+        width: 50%; }
+      .grid--3 .grid__col[class*="-sm1"] {
+        width: 33.3333333333%; }
+      .grid--4 .grid__col[class*="-sm1"] {
+        width: 25%; }
+      .grid--5 .grid__col[class*="-sm1"] {
+        width: 20%; }
+      .grid--6 .grid__col[class*="-sm1"] {
+        width: 16.6666666667%; }
+      .grid--7 .grid__col[class*="-sm1"] {
+        width: 14.2857142857%; }
+      .grid--8 .grid__col[class*="-sm1"] {
+        width: 12.5%; }
+      .grid--9 .grid__col[class*="-sm1"] {
+        width: 11.1111111111%; }
+      .grid--10 .grid__col[class*="-sm1"] {
+        width: 10%; }
+      .grid--11 .grid__col[class*="-sm1"] {
+        width: 9.0909090909%; }
+      .grid--12 .grid__col[class*="-sm1"] {
+        width: 8.3333333333%; }
+      .grid--1 .grid__col[class*="-sm2"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm2"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm2"] {
+        width: 66.6666666667%; }
+      .grid--4 .grid__col[class*="-sm2"] {
+        width: 50%; }
+      .grid--5 .grid__col[class*="-sm2"] {
+        width: 40%; }
+      .grid--6 .grid__col[class*="-sm2"] {
+        width: 33.3333333333%; }
+      .grid--7 .grid__col[class*="-sm2"] {
+        width: 28.5714285714%; }
+      .grid--8 .grid__col[class*="-sm2"] {
+        width: 25%; }
+      .grid--9 .grid__col[class*="-sm2"] {
+        width: 22.2222222222%; }
+      .grid--10 .grid__col[class*="-sm2"] {
+        width: 20%; }
+      .grid--11 .grid__col[class*="-sm2"] {
+        width: 18.1818181818%; }
+      .grid--12 .grid__col[class*="-sm2"] {
+        width: 16.6666666667%; }
+      .grid--1 .grid__col[class*="-sm3"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm3"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm3"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm3"] {
+        width: 75%; }
+      .grid--5 .grid__col[class*="-sm3"] {
+        width: 60%; }
+      .grid--6 .grid__col[class*="-sm3"] {
+        width: 50%; }
+      .grid--7 .grid__col[class*="-sm3"] {
+        width: 42.8571428571%; }
+      .grid--8 .grid__col[class*="-sm3"] {
+        width: 37.5%; }
+      .grid--9 .grid__col[class*="-sm3"] {
+        width: 33.3333333333%; }
+      .grid--10 .grid__col[class*="-sm3"] {
+        width: 30%; }
+      .grid--11 .grid__col[class*="-sm3"] {
+        width: 27.2727272727%; }
+      .grid--12 .grid__col[class*="-sm3"] {
+        width: 25%; }
+      .grid--1 .grid__col[class*="-sm4"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm4"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm4"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm4"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm4"] {
+        width: 80%; }
+      .grid--6 .grid__col[class*="-sm4"] {
+        width: 66.6666666667%; }
+      .grid--7 .grid__col[class*="-sm4"] {
+        width: 57.1428571429%; }
+      .grid--8 .grid__col[class*="-sm4"] {
+        width: 50%; }
+      .grid--9 .grid__col[class*="-sm4"] {
+        width: 44.4444444444%; }
+      .grid--10 .grid__col[class*="-sm4"] {
+        width: 40%; }
+      .grid--11 .grid__col[class*="-sm4"] {
+        width: 36.3636363636%; }
+      .grid--12 .grid__col[class*="-sm4"] {
+        width: 33.3333333333%; }
+      .grid--1 .grid__col[class*="-sm5"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm5"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm5"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm5"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm5"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm5"] {
+        width: 83.3333333333%; }
+      .grid--7 .grid__col[class*="-sm5"] {
+        width: 71.4285714286%; }
+      .grid--8 .grid__col[class*="-sm5"] {
+        width: 62.5%; }
+      .grid--9 .grid__col[class*="-sm5"] {
+        width: 55.5555555556%; }
+      .grid--10 .grid__col[class*="-sm5"] {
+        width: 50%; }
+      .grid--11 .grid__col[class*="-sm5"] {
+        width: 45.4545454545%; }
+      .grid--12 .grid__col[class*="-sm5"] {
+        width: 41.6666666667%; }
+      .grid--1 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm6"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm6"] {
+        width: 85.7142857143%; }
+      .grid--8 .grid__col[class*="-sm6"] {
+        width: 75%; }
+      .grid--9 .grid__col[class*="-sm6"] {
+        width: 66.6666666667%; }
+      .grid--10 .grid__col[class*="-sm6"] {
+        width: 60%; }
+      .grid--11 .grid__col[class*="-sm6"] {
+        width: 54.5454545455%; }
+      .grid--12 .grid__col[class*="-sm6"] {
+        width: 50%; }
+      .grid--1 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm7"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm7"] {
+        width: 87.5%; }
+      .grid--9 .grid__col[class*="-sm7"] {
+        width: 77.7777777778%; }
+      .grid--10 .grid__col[class*="-sm7"] {
+        width: 70%; }
+      .grid--11 .grid__col[class*="-sm7"] {
+        width: 63.6363636364%; }
+      .grid--12 .grid__col[class*="-sm7"] {
+        width: 58.3333333333%; }
+      .grid--1 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm8"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-sm8"] {
+        width: 88.8888888889%; }
+      .grid--10 .grid__col[class*="-sm8"] {
+        width: 80%; }
+      .grid--11 .grid__col[class*="-sm8"] {
+        width: 72.7272727273%; }
+      .grid--12 .grid__col[class*="-sm8"] {
+        width: 66.6666666667%; }
+      .grid--1 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-sm9"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-sm9"] {
+        width: 90%; }
+      .grid--11 .grid__col[class*="-sm9"] {
+        width: 81.8181818182%; }
+      .grid--12 .grid__col[class*="-sm9"] {
+        width: 75%; }
+      .grid--1 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-sm10"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-sm10"] {
+        width: 90.9090909091%; }
+      .grid--12 .grid__col[class*="-sm10"] {
+        width: 83.3333333333%; }
+      .grid--1 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-sm11"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-sm11"] {
+        width: 91.6666666667%; }
+      .grid--1 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-sm12"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-sm12"] {
+        width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .grid__col {
+      display: inline-block;
+      font-size: 16px; }
+      .grid--1 .grid__col[class*="-md1"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md1"] {
+        width: 50%; }
+      .grid--3 .grid__col[class*="-md1"] {
+        width: 33.3333333333%; }
+      .grid--4 .grid__col[class*="-md1"] {
+        width: 25%; }
+      .grid--5 .grid__col[class*="-md1"] {
+        width: 20%; }
+      .grid--6 .grid__col[class*="-md1"] {
+        width: 16.6666666667%; }
+      .grid--7 .grid__col[class*="-md1"] {
+        width: 14.2857142857%; }
+      .grid--8 .grid__col[class*="-md1"] {
+        width: 12.5%; }
+      .grid--9 .grid__col[class*="-md1"] {
+        width: 11.1111111111%; }
+      .grid--10 .grid__col[class*="-md1"] {
+        width: 10%; }
+      .grid--11 .grid__col[class*="-md1"] {
+        width: 9.0909090909%; }
+      .grid--12 .grid__col[class*="-md1"] {
+        width: 8.3333333333%; }
+      .grid--1 .grid__col[class*="-md2"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md2"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md2"] {
+        width: 66.6666666667%; }
+      .grid--4 .grid__col[class*="-md2"] {
+        width: 50%; }
+      .grid--5 .grid__col[class*="-md2"] {
+        width: 40%; }
+      .grid--6 .grid__col[class*="-md2"] {
+        width: 33.3333333333%; }
+      .grid--7 .grid__col[class*="-md2"] {
+        width: 28.5714285714%; }
+      .grid--8 .grid__col[class*="-md2"] {
+        width: 25%; }
+      .grid--9 .grid__col[class*="-md2"] {
+        width: 22.2222222222%; }
+      .grid--10 .grid__col[class*="-md2"] {
+        width: 20%; }
+      .grid--11 .grid__col[class*="-md2"] {
+        width: 18.1818181818%; }
+      .grid--12 .grid__col[class*="-md2"] {
+        width: 16.6666666667%; }
+      .grid--1 .grid__col[class*="-md3"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md3"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md3"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md3"] {
+        width: 75%; }
+      .grid--5 .grid__col[class*="-md3"] {
+        width: 60%; }
+      .grid--6 .grid__col[class*="-md3"] {
+        width: 50%; }
+      .grid--7 .grid__col[class*="-md3"] {
+        width: 42.8571428571%; }
+      .grid--8 .grid__col[class*="-md3"] {
+        width: 37.5%; }
+      .grid--9 .grid__col[class*="-md3"] {
+        width: 33.3333333333%; }
+      .grid--10 .grid__col[class*="-md3"] {
+        width: 30%; }
+      .grid--11 .grid__col[class*="-md3"] {
+        width: 27.2727272727%; }
+      .grid--12 .grid__col[class*="-md3"] {
+        width: 25%; }
+      .grid--1 .grid__col[class*="-md4"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md4"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md4"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md4"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md4"] {
+        width: 80%; }
+      .grid--6 .grid__col[class*="-md4"] {
+        width: 66.6666666667%; }
+      .grid--7 .grid__col[class*="-md4"] {
+        width: 57.1428571429%; }
+      .grid--8 .grid__col[class*="-md4"] {
+        width: 50%; }
+      .grid--9 .grid__col[class*="-md4"] {
+        width: 44.4444444444%; }
+      .grid--10 .grid__col[class*="-md4"] {
+        width: 40%; }
+      .grid--11 .grid__col[class*="-md4"] {
+        width: 36.3636363636%; }
+      .grid--12 .grid__col[class*="-md4"] {
+        width: 33.3333333333%; }
+      .grid--1 .grid__col[class*="-md5"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md5"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md5"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md5"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md5"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md5"] {
+        width: 83.3333333333%; }
+      .grid--7 .grid__col[class*="-md5"] {
+        width: 71.4285714286%; }
+      .grid--8 .grid__col[class*="-md5"] {
+        width: 62.5%; }
+      .grid--9 .grid__col[class*="-md5"] {
+        width: 55.5555555556%; }
+      .grid--10 .grid__col[class*="-md5"] {
+        width: 50%; }
+      .grid--11 .grid__col[class*="-md5"] {
+        width: 45.4545454545%; }
+      .grid--12 .grid__col[class*="-md5"] {
+        width: 41.6666666667%; }
+      .grid--1 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md6"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md6"] {
+        width: 85.7142857143%; }
+      .grid--8 .grid__col[class*="-md6"] {
+        width: 75%; }
+      .grid--9 .grid__col[class*="-md6"] {
+        width: 66.6666666667%; }
+      .grid--10 .grid__col[class*="-md6"] {
+        width: 60%; }
+      .grid--11 .grid__col[class*="-md6"] {
+        width: 54.5454545455%; }
+      .grid--12 .grid__col[class*="-md6"] {
+        width: 50%; }
+      .grid--1 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md7"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md7"] {
+        width: 87.5%; }
+      .grid--9 .grid__col[class*="-md7"] {
+        width: 77.7777777778%; }
+      .grid--10 .grid__col[class*="-md7"] {
+        width: 70%; }
+      .grid--11 .grid__col[class*="-md7"] {
+        width: 63.6363636364%; }
+      .grid--12 .grid__col[class*="-md7"] {
+        width: 58.3333333333%; }
+      .grid--1 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md8"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-md8"] {
+        width: 88.8888888889%; }
+      .grid--10 .grid__col[class*="-md8"] {
+        width: 80%; }
+      .grid--11 .grid__col[class*="-md8"] {
+        width: 72.7272727273%; }
+      .grid--12 .grid__col[class*="-md8"] {
+        width: 66.6666666667%; }
+      .grid--1 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-md9"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-md9"] {
+        width: 90%; }
+      .grid--11 .grid__col[class*="-md9"] {
+        width: 81.8181818182%; }
+      .grid--12 .grid__col[class*="-md9"] {
+        width: 75%; }
+      .grid--1 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-md10"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-md10"] {
+        width: 90.9090909091%; }
+      .grid--12 .grid__col[class*="-md10"] {
+        width: 83.3333333333%; }
+      .grid--1 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-md11"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-md11"] {
+        width: 91.6666666667%; }
+      .grid--1 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-md12"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-md12"] {
+        width: 100%; } }
+  @media screen and (min-width: 1200px) {
+    .grid__col {
+      display: inline-block;
+      font-size: 16px; }
+      .grid--1 .grid__col[class*="-lg1"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg1"] {
+        width: 50%; }
+      .grid--3 .grid__col[class*="-lg1"] {
+        width: 33.3333333333%; }
+      .grid--4 .grid__col[class*="-lg1"] {
+        width: 25%; }
+      .grid--5 .grid__col[class*="-lg1"] {
+        width: 20%; }
+      .grid--6 .grid__col[class*="-lg1"] {
+        width: 16.6666666667%; }
+      .grid--7 .grid__col[class*="-lg1"] {
+        width: 14.2857142857%; }
+      .grid--8 .grid__col[class*="-lg1"] {
+        width: 12.5%; }
+      .grid--9 .grid__col[class*="-lg1"] {
+        width: 11.1111111111%; }
+      .grid--10 .grid__col[class*="-lg1"] {
+        width: 10%; }
+      .grid--11 .grid__col[class*="-lg1"] {
+        width: 9.0909090909%; }
+      .grid--12 .grid__col[class*="-lg1"] {
+        width: 8.3333333333%; }
+      .grid--1 .grid__col[class*="-lg2"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg2"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg2"] {
+        width: 66.6666666667%; }
+      .grid--4 .grid__col[class*="-lg2"] {
+        width: 50%; }
+      .grid--5 .grid__col[class*="-lg2"] {
+        width: 40%; }
+      .grid--6 .grid__col[class*="-lg2"] {
+        width: 33.3333333333%; }
+      .grid--7 .grid__col[class*="-lg2"] {
+        width: 28.5714285714%; }
+      .grid--8 .grid__col[class*="-lg2"] {
+        width: 25%; }
+      .grid--9 .grid__col[class*="-lg2"] {
+        width: 22.2222222222%; }
+      .grid--10 .grid__col[class*="-lg2"] {
+        width: 20%; }
+      .grid--11 .grid__col[class*="-lg2"] {
+        width: 18.1818181818%; }
+      .grid--12 .grid__col[class*="-lg2"] {
+        width: 16.6666666667%; }
+      .grid--1 .grid__col[class*="-lg3"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg3"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg3"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg3"] {
+        width: 75%; }
+      .grid--5 .grid__col[class*="-lg3"] {
+        width: 60%; }
+      .grid--6 .grid__col[class*="-lg3"] {
+        width: 50%; }
+      .grid--7 .grid__col[class*="-lg3"] {
+        width: 42.8571428571%; }
+      .grid--8 .grid__col[class*="-lg3"] {
+        width: 37.5%; }
+      .grid--9 .grid__col[class*="-lg3"] {
+        width: 33.3333333333%; }
+      .grid--10 .grid__col[class*="-lg3"] {
+        width: 30%; }
+      .grid--11 .grid__col[class*="-lg3"] {
+        width: 27.2727272727%; }
+      .grid--12 .grid__col[class*="-lg3"] {
+        width: 25%; }
+      .grid--1 .grid__col[class*="-lg4"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg4"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg4"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg4"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg4"] {
+        width: 80%; }
+      .grid--6 .grid__col[class*="-lg4"] {
+        width: 66.6666666667%; }
+      .grid--7 .grid__col[class*="-lg4"] {
+        width: 57.1428571429%; }
+      .grid--8 .grid__col[class*="-lg4"] {
+        width: 50%; }
+      .grid--9 .grid__col[class*="-lg4"] {
+        width: 44.4444444444%; }
+      .grid--10 .grid__col[class*="-lg4"] {
+        width: 40%; }
+      .grid--11 .grid__col[class*="-lg4"] {
+        width: 36.3636363636%; }
+      .grid--12 .grid__col[class*="-lg4"] {
+        width: 33.3333333333%; }
+      .grid--1 .grid__col[class*="-lg5"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg5"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg5"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg5"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg5"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg5"] {
+        width: 83.3333333333%; }
+      .grid--7 .grid__col[class*="-lg5"] {
+        width: 71.4285714286%; }
+      .grid--8 .grid__col[class*="-lg5"] {
+        width: 62.5%; }
+      .grid--9 .grid__col[class*="-lg5"] {
+        width: 55.5555555556%; }
+      .grid--10 .grid__col[class*="-lg5"] {
+        width: 50%; }
+      .grid--11 .grid__col[class*="-lg5"] {
+        width: 45.4545454545%; }
+      .grid--12 .grid__col[class*="-lg5"] {
+        width: 41.6666666667%; }
+      .grid--1 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg6"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg6"] {
+        width: 85.7142857143%; }
+      .grid--8 .grid__col[class*="-lg6"] {
+        width: 75%; }
+      .grid--9 .grid__col[class*="-lg6"] {
+        width: 66.6666666667%; }
+      .grid--10 .grid__col[class*="-lg6"] {
+        width: 60%; }
+      .grid--11 .grid__col[class*="-lg6"] {
+        width: 54.5454545455%; }
+      .grid--12 .grid__col[class*="-lg6"] {
+        width: 50%; }
+      .grid--1 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg7"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg7"] {
+        width: 87.5%; }
+      .grid--9 .grid__col[class*="-lg7"] {
+        width: 77.7777777778%; }
+      .grid--10 .grid__col[class*="-lg7"] {
+        width: 70%; }
+      .grid--11 .grid__col[class*="-lg7"] {
+        width: 63.6363636364%; }
+      .grid--12 .grid__col[class*="-lg7"] {
+        width: 58.3333333333%; }
+      .grid--1 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg8"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-lg8"] {
+        width: 88.8888888889%; }
+      .grid--10 .grid__col[class*="-lg8"] {
+        width: 80%; }
+      .grid--11 .grid__col[class*="-lg8"] {
+        width: 72.7272727273%; }
+      .grid--12 .grid__col[class*="-lg8"] {
+        width: 66.6666666667%; }
+      .grid--1 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-lg9"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-lg9"] {
+        width: 90%; }
+      .grid--11 .grid__col[class*="-lg9"] {
+        width: 81.8181818182%; }
+      .grid--12 .grid__col[class*="-lg9"] {
+        width: 75%; }
+      .grid--1 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-lg10"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-lg10"] {
+        width: 90.9090909091%; }
+      .grid--12 .grid__col[class*="-lg10"] {
+        width: 83.3333333333%; }
+      .grid--1 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-lg11"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-lg11"] {
+        width: 91.6666666667%; }
+      .grid--1 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-lg12"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-lg12"] {
+        width: 100%; } }
+  @media screen and (min-width: 1400px) {
+    .grid__col {
+      display: inline-block;
+      font-size: 16px; }
+      .grid--1 .grid__col[class*="-xl1"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl1"] {
+        width: 50%; }
+      .grid--3 .grid__col[class*="-xl1"] {
+        width: 33.3333333333%; }
+      .grid--4 .grid__col[class*="-xl1"] {
+        width: 25%; }
+      .grid--5 .grid__col[class*="-xl1"] {
+        width: 20%; }
+      .grid--6 .grid__col[class*="-xl1"] {
+        width: 16.6666666667%; }
+      .grid--7 .grid__col[class*="-xl1"] {
+        width: 14.2857142857%; }
+      .grid--8 .grid__col[class*="-xl1"] {
+        width: 12.5%; }
+      .grid--9 .grid__col[class*="-xl1"] {
+        width: 11.1111111111%; }
+      .grid--10 .grid__col[class*="-xl1"] {
+        width: 10%; }
+      .grid--11 .grid__col[class*="-xl1"] {
+        width: 9.0909090909%; }
+      .grid--12 .grid__col[class*="-xl1"] {
+        width: 8.3333333333%; }
+      .grid--1 .grid__col[class*="-xl2"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl2"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl2"] {
+        width: 66.6666666667%; }
+      .grid--4 .grid__col[class*="-xl2"] {
+        width: 50%; }
+      .grid--5 .grid__col[class*="-xl2"] {
+        width: 40%; }
+      .grid--6 .grid__col[class*="-xl2"] {
+        width: 33.3333333333%; }
+      .grid--7 .grid__col[class*="-xl2"] {
+        width: 28.5714285714%; }
+      .grid--8 .grid__col[class*="-xl2"] {
+        width: 25%; }
+      .grid--9 .grid__col[class*="-xl2"] {
+        width: 22.2222222222%; }
+      .grid--10 .grid__col[class*="-xl2"] {
+        width: 20%; }
+      .grid--11 .grid__col[class*="-xl2"] {
+        width: 18.1818181818%; }
+      .grid--12 .grid__col[class*="-xl2"] {
+        width: 16.6666666667%; }
+      .grid--1 .grid__col[class*="-xl3"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl3"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl3"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl3"] {
+        width: 75%; }
+      .grid--5 .grid__col[class*="-xl3"] {
+        width: 60%; }
+      .grid--6 .grid__col[class*="-xl3"] {
+        width: 50%; }
+      .grid--7 .grid__col[class*="-xl3"] {
+        width: 42.8571428571%; }
+      .grid--8 .grid__col[class*="-xl3"] {
+        width: 37.5%; }
+      .grid--9 .grid__col[class*="-xl3"] {
+        width: 33.3333333333%; }
+      .grid--10 .grid__col[class*="-xl3"] {
+        width: 30%; }
+      .grid--11 .grid__col[class*="-xl3"] {
+        width: 27.2727272727%; }
+      .grid--12 .grid__col[class*="-xl3"] {
+        width: 25%; }
+      .grid--1 .grid__col[class*="-xl4"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl4"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl4"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl4"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl4"] {
+        width: 80%; }
+      .grid--6 .grid__col[class*="-xl4"] {
+        width: 66.6666666667%; }
+      .grid--7 .grid__col[class*="-xl4"] {
+        width: 57.1428571429%; }
+      .grid--8 .grid__col[class*="-xl4"] {
+        width: 50%; }
+      .grid--9 .grid__col[class*="-xl4"] {
+        width: 44.4444444444%; }
+      .grid--10 .grid__col[class*="-xl4"] {
+        width: 40%; }
+      .grid--11 .grid__col[class*="-xl4"] {
+        width: 36.3636363636%; }
+      .grid--12 .grid__col[class*="-xl4"] {
+        width: 33.3333333333%; }
+      .grid--1 .grid__col[class*="-xl5"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl5"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl5"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl5"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl5"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl5"] {
+        width: 83.3333333333%; }
+      .grid--7 .grid__col[class*="-xl5"] {
+        width: 71.4285714286%; }
+      .grid--8 .grid__col[class*="-xl5"] {
+        width: 62.5%; }
+      .grid--9 .grid__col[class*="-xl5"] {
+        width: 55.5555555556%; }
+      .grid--10 .grid__col[class*="-xl5"] {
+        width: 50%; }
+      .grid--11 .grid__col[class*="-xl5"] {
+        width: 45.4545454545%; }
+      .grid--12 .grid__col[class*="-xl5"] {
+        width: 41.6666666667%; }
+      .grid--1 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl6"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl6"] {
+        width: 85.7142857143%; }
+      .grid--8 .grid__col[class*="-xl6"] {
+        width: 75%; }
+      .grid--9 .grid__col[class*="-xl6"] {
+        width: 66.6666666667%; }
+      .grid--10 .grid__col[class*="-xl6"] {
+        width: 60%; }
+      .grid--11 .grid__col[class*="-xl6"] {
+        width: 54.5454545455%; }
+      .grid--12 .grid__col[class*="-xl6"] {
+        width: 50%; }
+      .grid--1 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl7"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl7"] {
+        width: 87.5%; }
+      .grid--9 .grid__col[class*="-xl7"] {
+        width: 77.7777777778%; }
+      .grid--10 .grid__col[class*="-xl7"] {
+        width: 70%; }
+      .grid--11 .grid__col[class*="-xl7"] {
+        width: 63.6363636364%; }
+      .grid--12 .grid__col[class*="-xl7"] {
+        width: 58.3333333333%; }
+      .grid--1 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl8"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xl8"] {
+        width: 88.8888888889%; }
+      .grid--10 .grid__col[class*="-xl8"] {
+        width: 80%; }
+      .grid--11 .grid__col[class*="-xl8"] {
+        width: 72.7272727273%; }
+      .grid--12 .grid__col[class*="-xl8"] {
+        width: 66.6666666667%; }
+      .grid--1 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xl9"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xl9"] {
+        width: 90%; }
+      .grid--11 .grid__col[class*="-xl9"] {
+        width: 81.8181818182%; }
+      .grid--12 .grid__col[class*="-xl9"] {
+        width: 75%; }
+      .grid--1 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xl10"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xl10"] {
+        width: 90.9090909091%; }
+      .grid--12 .grid__col[class*="-xl10"] {
+        width: 83.3333333333%; }
+      .grid--1 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xl11"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-xl11"] {
+        width: 91.6666666667%; }
+      .grid--1 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--2 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--3 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--4 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--5 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--6 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--7 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--8 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--9 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--10 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--11 .grid__col[class*="-xl12"] {
+        width: 100%; }
+      .grid--12 .grid__col[class*="-xl12"] {
+        width: 100%; } }
+  @supports (display: grid) {
+    .grid__col {
+      display: block;
+      font-size: inherit;
+      width: auto; }
+      @media screen and (min-width: 576px) {
+        .grid--1 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--3 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--4 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--5 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--6 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--7 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--8 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--9 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--10 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--11 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--12 .grid__col[class*="-xs1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--1 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--4 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--5 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--6 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--7 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--8 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--9 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--10 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--11 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--12 .grid__col[class*="-xs2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--1 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--5 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--6 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--7 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--8 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--9 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--10 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--11 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--12 .grid__col[class*="-xs3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--1 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--6 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--7 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--8 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--9 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--10 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--11 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--12 .grid__col[class*="-xs4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--1 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--7 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--8 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--9 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--10 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--11 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--12 .grid__col[class*="-xs5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--1 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--8 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--9 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--10 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--11 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--12 .grid__col[class*="-xs6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--1 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--9 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--10 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--11 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--12 .grid__col[class*="-xs7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--1 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--10 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--11 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--12 .grid__col[class*="-xs8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--1 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--11 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--12 .grid__col[class*="-xs9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--1 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--12 .grid__col[class*="-xs10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--1 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-xs11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--1 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-xs12"] {
+          width: auto;
+          grid-column: span 12; } }
+      @media screen and (min-width: 768px) {
+        .grid--1 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--3 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--4 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--5 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--6 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--7 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--8 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--9 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--10 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--11 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--12 .grid__col[class*="-sm1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--1 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--4 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--5 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--6 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--7 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--8 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--9 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--10 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--11 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--12 .grid__col[class*="-sm2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--1 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--5 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--6 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--7 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--8 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--9 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--10 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--11 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--12 .grid__col[class*="-sm3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--1 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--6 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--7 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--8 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--9 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--10 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--11 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--12 .grid__col[class*="-sm4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--1 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--7 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--8 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--9 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--10 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--11 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--12 .grid__col[class*="-sm5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--1 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--8 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--9 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--10 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--11 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--12 .grid__col[class*="-sm6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--1 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--9 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--10 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--11 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--12 .grid__col[class*="-sm7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--1 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--10 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--11 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--12 .grid__col[class*="-sm8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--1 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--11 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--12 .grid__col[class*="-sm9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--1 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--12 .grid__col[class*="-sm10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--1 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-sm11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--1 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-sm12"] {
+          width: auto;
+          grid-column: span 12; } }
+      @media screen and (min-width: 992px) {
+        .grid--1 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--3 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--4 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--5 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--6 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--7 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--8 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--9 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--10 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--11 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--12 .grid__col[class*="-md1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--1 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--4 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--5 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--6 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--7 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--8 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--9 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--10 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--11 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--12 .grid__col[class*="-md2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--1 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--5 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--6 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--7 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--8 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--9 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--10 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--11 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--12 .grid__col[class*="-md3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--1 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--6 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--7 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--8 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--9 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--10 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--11 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--12 .grid__col[class*="-md4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--1 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--7 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--8 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--9 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--10 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--11 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--12 .grid__col[class*="-md5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--1 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--8 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--9 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--10 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--11 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--12 .grid__col[class*="-md6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--1 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--9 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--10 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--11 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--12 .grid__col[class*="-md7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--1 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--10 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--11 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--12 .grid__col[class*="-md8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--1 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--11 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--12 .grid__col[class*="-md9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--1 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--12 .grid__col[class*="-md10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--1 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-md11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--1 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-md12"] {
+          width: auto;
+          grid-column: span 12; } }
+      @media screen and (min-width: 1200px) {
+        .grid--1 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--3 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--4 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--5 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--6 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--7 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--8 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--9 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--10 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--11 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--12 .grid__col[class*="-lg1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--1 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--4 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--5 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--6 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--7 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--8 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--9 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--10 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--11 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--12 .grid__col[class*="-lg2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--1 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--5 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--6 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--7 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--8 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--9 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--10 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--11 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--12 .grid__col[class*="-lg3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--1 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--6 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--7 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--8 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--9 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--10 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--11 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--12 .grid__col[class*="-lg4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--1 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--7 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--8 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--9 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--10 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--11 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--12 .grid__col[class*="-lg5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--1 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--8 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--9 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--10 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--11 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--12 .grid__col[class*="-lg6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--1 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--9 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--10 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--11 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--12 .grid__col[class*="-lg7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--1 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--10 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--11 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--12 .grid__col[class*="-lg8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--1 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--11 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--12 .grid__col[class*="-lg9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--1 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--12 .grid__col[class*="-lg10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--1 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-lg11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--1 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-lg12"] {
+          width: auto;
+          grid-column: span 12; } }
+      @media screen and (min-width: 1400px) {
+        .grid--1 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--3 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--4 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--5 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--6 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--7 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--8 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--9 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--10 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--11 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--12 .grid__col[class*="-xl1"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--1 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--4 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--5 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--6 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--7 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--8 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--9 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--10 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--11 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--12 .grid__col[class*="-xl2"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--1 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--5 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--6 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--7 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--8 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--9 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--10 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--11 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--12 .grid__col[class*="-xl3"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--1 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--6 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--7 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--8 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--9 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--10 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--11 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--12 .grid__col[class*="-xl4"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--1 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--7 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--8 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--9 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--10 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--11 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--12 .grid__col[class*="-xl5"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--1 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--8 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--9 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--10 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--11 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--12 .grid__col[class*="-xl6"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--1 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--9 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--10 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--11 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--12 .grid__col[class*="-xl7"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--1 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--10 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--11 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--12 .grid__col[class*="-xl8"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--1 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--11 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--12 .grid__col[class*="-xl9"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--1 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--12 .grid__col[class*="-xl10"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--1 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-xl11"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--1 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 1; }
+        .grid--2 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 2; }
+        .grid--3 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 3; }
+        .grid--4 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 4; }
+        .grid--5 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 5; }
+        .grid--6 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 6; }
+        .grid--7 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 7; }
+        .grid--8 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 8; }
+        .grid--9 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 9; }
+        .grid--10 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 10; }
+        .grid--11 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 11; }
+        .grid--12 .grid__col[class*="-xl12"] {
+          width: auto;
+          grid-column: span 12; } } }
+
+.ind--grid {
+  display: none; }
+.ind--nogrid {
+  display: block; }
+@supports (display: grid) {
+  .ind--grid {
+    display: block; }
+  .ind--nogrid {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
