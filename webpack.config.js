@@ -1,5 +1,6 @@
 var webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var postcssMerge = require('postcss-merge-selectors');
 
 const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
@@ -19,6 +20,8 @@ module.exports = {
             use: extractSass.extract({
                 use: [{
                     loader: "css-loader"
+                }, {
+                        loader: "postcss-loader"
                 }, {
                     loader: "sass-loader"
                 }],
